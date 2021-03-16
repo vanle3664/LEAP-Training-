@@ -4,8 +4,9 @@ class Motorbike : public DynamicObject{
 		Motorbike(int id, string name, int position) : DynamicObject(id, name, position){
 		}
 		~Motorbike(){}
-		void move(int x){
+		void move(){
 			BaseObject::setPosition(BaseObject::getPosition()+1); 
+			cout << BaseObject::getPosition() << endl;
 		}
 		
 };
