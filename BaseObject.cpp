@@ -14,7 +14,7 @@ class BaseObject{
 			this->position = position;
 		}
 		~BaseObject(){};
-		
+		virtual void move() = 0; 
 		void setPosition(int position){
 			this->position = position; 
 		} 
@@ -32,5 +32,4 @@ class BaseObject{
 		}
 	
 };
-
 
